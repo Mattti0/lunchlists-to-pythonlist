@@ -1,0 +1,35 @@
+[restaurants]
+
+[restaurants.vaasa]
+restaurants = [
+    "wolffila",
+    "cottonclub",
+    "kesmovaasa",
+    "leison",
+    "svenskaklubben"
+]
+
+[restaurants.seinajoki]
+restaurants = [
+    "marttilantalli",
+    "areena",
+    "idea",
+    "komia"
+]
+
+[restaurants.jyvaskyla]
+restaurants = [
+    "fiilu"
+]
+
+[restaurants.oulu]
+restaurants = [
+    "smarthouse",
+    "galaxi"
+]
+
+[restaurants.tampere]
+restaurants = [
+    "sodexo_5",
+    "sodexo_6"
+]
