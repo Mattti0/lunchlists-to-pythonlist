@@ -14,7 +14,7 @@ def GetMenuJamix(CustomerId, RestaurantId):
     apiUrl = "http://fi.jamix.cloud/apps/menuservice/rest/haku/menu/#customerId#/#restaurantId#"
     apiUrl = apiUrl.replace("#customerId#", CustomerId).replace(
         "#restaurantId#", RestaurantId)
-    requestInfo = {'type': json, 'date': date.today(
+    requestInfo = {'type': 'json', 'date': date.today(
     ).isoformat().replace('-', ''), 'lang': 'fi'}
     response = requests.get(apiUrl, params=requestInfo)
     menuJson = response.json()
