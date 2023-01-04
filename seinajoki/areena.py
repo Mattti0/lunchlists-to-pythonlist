@@ -7,7 +7,7 @@ from restaurants import restaurants
 class Areena:
     name = "Areena"
     icon = ":stadium:"
-    url = "https://www.foodandco.fi/ravintolat/Ravintolat-kaupungeittain/seinajoki/seinajoki-areena/"
+    url: str = foodandco.get_url("seinajoki", "areena")
 
     def getList(self) -> list[str]:
         return foodandco.getMenu('3533', False)

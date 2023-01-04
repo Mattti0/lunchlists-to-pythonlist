@@ -31,3 +31,6 @@ def getMenu(restaurantId, variablePricing):
                     menu.append(item)
 
     return menu
+
+def get_url(city: str, name: str):
+    return f"https://www.compass-group.fi/ravintolat-ja-ruokalistat/foodco/kaupungit/{city}/{name}/"

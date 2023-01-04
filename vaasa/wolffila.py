@@ -3,6 +3,7 @@ from dataclasses import dataclass
 import requests
 import json
 import re
+from restaurants import foodandco
 
 from restaurants import restaurants
 
@@ -11,7 +12,7 @@ from restaurants import restaurants
 class Wolffila:
     name: str = "Wolffila"
     icon: str = ":wolf:"
-    url: str = "https://www.foodandco.fi/ravintolat/Ravintolat-kaupungeittain/vaasa/wolffila/"
+    url: str = foodandco.get_url("vaasa", "wolffila")
 
     def getList(self) -> list[str]:
         menu = []

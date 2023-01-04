@@ -6,7 +6,7 @@ from dataclasses import dataclass
 class Fiilu:
     name = "Fiilu"
     icon = ":one:"
-    url = "https://www.foodandco.fi/fiilu"
+    url: str = foodandco.get_url("jyvaskyla", "fiilu")
 
     def getList(self) -> list[str]:
         return foodandco.getMenu('3364', False)
