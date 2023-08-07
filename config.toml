@@ -13,8 +13,7 @@ restaurants = [
 restaurants = [
     "marttilantalli",
     "areena",
-    "idea",
-    "komia"
+    "raitti"
 ]
 
 [restaurants.jyvaskyla]
